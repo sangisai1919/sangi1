@@ -1,42 +1,183 @@
-body
+html, body
 {
-	margin: 0;
-	padding: 0;
-
+	height: 100%;
+	width:100%;
 }
-section
+.navbar
 {
-	width: 100%;
-	min-height: 700px;
+	background-color: #23415C;
+	padding-left: 1% 0;
+	font-size: 1.2em;
 }
-.waver
+.navbar-brand
 {
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+.navbar-default .navbar-nav li a
+{
+color: #D5D5D5;
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active
+{
+	color: #FFF;
+}
+#home{
+	background: url(img/mountains.jpeg) no-repeat center center fixed;
+	display: table;
+	height: 100%;
 	position: relative;
-	background: linear-gradient(90deg,#f0027f, #75489f);
-}
-.waver:before
-{
-	content: ' ';
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	width: 100%;
-	height: 215px;
-	background: url(wavee.png);
 	background-size: cover;
-animation: animate 10s linear infinite;
 
 }
-
-@keyframes animate 
+.landing-text
 {
-	0%
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.landing-text h1
+{
+	font-size: 400%;
+font-weight: 700;
+
+}
+.padding{
+	padding: 80px 0;
+}
+.padding img
+{
+	width: 100%;
+}
+#fixed{
+	background: url(img/background.jpg) no-repeat center center fixed;
+    display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;	
+}
+footer
+{
+	width: 100%;
+	background-color: #23415C;
+	padding:5% 5% 10% 5%;
+	color: #FFF;
+}
+.fa
+{
+	padding: 15px;
+	font-size: 25px;
+	color: #FFF;
+}
+.fa:hover
+{
+	color: #D5D5D5;
+	text-decoration: none;
+}
+.icon
+{
+	max-width: 200px;
+
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  cursor: pointer;
+  width: 200px;
+  height: 300px;
+}
+.front,.back{
+  width: 85%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+  width: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+@media (max-width: 768px)
+{
+	.landing-text h1
 	{
-		background-position: 0%
+		font-size: 20px;
+		font-weight: 10000
+	
 	}
-	100%
+	.icon
 	{
-		background-position: 1200px;
+		padding-top: 5%;
+		max-width: 100px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
