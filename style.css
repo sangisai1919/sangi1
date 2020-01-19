@@ -1,0 +1,42 @@
+body
+{
+	margin: 0;
+	padding: 0;
+
+}
+section
+{
+	width: 100%;
+	min-height: 700px;
+}
+.waver
+{
+	position: relative;
+	background: linear-gradient(90deg,#f0027f, #75489f);
+}
+.waver:before
+{
+	content: ' ';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 215px;
+	background: url(wavee.png);
+	background-size: cover;
+animation: animate 10s linear infinite;
+
+}
+
+@keyframes animate 
+{
+	0%
+	{
+		background-position: 0%
+	}
+	100%
+	{
+		background-position: 1200px;
+	}
+}
+
