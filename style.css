@@ -51,7 +51,7 @@ font-weight: 700;
 	width: 100%;
 }
 #fixed{
-	background: url(img/background.jpg) no-repeat center center fixed;
+	background: url(img/g1.jpg) no-repeat center center fixed;
     display: table;
 	height: 60%;
 	position: relative;
@@ -92,6 +92,34 @@ footer
   width: 200px;
   height: 300px;
 }
+#dblock
+{
+height:60%;
+}
+
+
+#id1
+{
+height:60%;
+}
+
+
+
+#id3
+{
+height:50%;
+}
+
+#id4
+{
+height:80%;
+}
+
+#id5
+{
+height:75%;
+}
+
 .front,.back{
   width: 85%;
   height: 100%;
